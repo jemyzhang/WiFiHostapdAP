@@ -5,7 +5,7 @@
 #include <QSettings>
 #include <QMessageBox>
 #include <QFile>
-#include <QTextIStream>
+#include <QTextStream>
 #include <QDir>
 #include <QDateTime>
 #include "cstdio"

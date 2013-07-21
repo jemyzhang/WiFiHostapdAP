@@ -18,7 +18,7 @@
 #include <QFile>
 #include <QDir>
 #include "logsystem.h"
-#include <QTextIStream>
+#include <QTextStream>
 #include "iostream"
 #include <QDesktopServices>
 #include <QUrl>
@@ -55,9 +55,7 @@ private slots:
 
     void on_Activate_clicked();
 
-    void on_AboutW_activated();
-
-    void on_OptW_activated();
+    void on_OptW_triggered();
 
     void console( char cmd[], char *ret);
 
@@ -65,12 +63,14 @@ private slots:
 
     void on_Disactive_clicked();
 
-    void on_EditorW_activated();
+    void on_EditorW_triggered();
 
     void TrafficUpdate();
 
-    void on_Log_activated();
+    void on_Log_triggered();
 
+
+    void on_AboutW_triggered();
 
 private:
 Ui::MainWindow *ui;

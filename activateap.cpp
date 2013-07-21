@@ -23,7 +23,7 @@ void ActivateAP::run()
 ////////////////////////////////////////////////////////////////////////////////////////////
 // Шаг 1: отключить интерфейс
 QString temp_QT = GlobalSettings->value("AP/Iface", "wlan0").toString().toLocal8Bit();
-temp = temp_QT.toAscii().data();
+temp = temp_QT.toLatin1().data();
 strcat(command, temp);
 strcat(command, " down");
 
@@ -42,16 +42,16 @@ if(starting==true) {
 strcpy(command, "ifconfig ");
 strcpy(temp, "");
 temp_QT = GlobalSettings->value("AP/Iface", "wlan0").toString().toLocal8Bit();
-temp = temp_QT.toAscii().data();
+temp = temp_QT.toLatin1().data();
 strcat(command, temp);
 strcat(command, " ");
 temp_QT = GlobalSettings->value("AP/IP_SERVER", "192.168.0.1").toString().toLocal8Bit();
-temp = temp_QT.toAscii().data();
+temp = temp_QT.toLatin1().data();
 strcat(command, temp);
 strcat(command, " netmask ");
 strcpy(temp, "");
 temp_QT = GlobalSettings->value("AP/MASK", "255.255.255.0").toString().toLocal8Bit();
-temp = temp_QT.toAscii().data();
+temp = temp_QT.toLatin1().data();
 strcat(command, temp);
 strcat(command, " up");
 console(command, tmp);
@@ -73,7 +73,7 @@ sleep(0.5);
 if(starting==true) {
 strcpy(command, "ifconfig ");
 temp_QT = GlobalSettings->value("AP/Iface", "wlan0").toString().toLocal8Bit();
-temp = temp_QT.toAscii().data();
+temp = temp_QT.toLatin1().data();
 strcat(command, temp);
 strcat(command, " up");
 console(command, tmp);
@@ -127,7 +127,7 @@ sleep(0.5);
 if(starting==true) {
 strcpy(command, "iptables -t nat -A POSTROUTING -o  ");
 temp_QT = GlobalSettings->value("DHCP/Internet_iface", "eth0").toString().toLocal8Bit();
-temp = temp_QT.toAscii().data();
+temp = temp_QT.toLatin1().data();
 strcat(command, temp);
 strcat(command, "  -j MASQUERADE");
 sleep(0.5);

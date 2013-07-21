@@ -6,7 +6,7 @@
 #include <QFile>
 #include <QDate>
 #include <QSettings>
-#include <QTextIStream>
+#include <QTextStream>
 #include <QDebug>
 #include <QMessageBox>
 #include <QTextStream>

@@ -222,17 +222,17 @@
          <widget class="QComboBox" name="Language">
           <item>
            <property name="text">
-            <string>Автоматически</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
             <string>English</string>
            </property>
           </item>
           <item>
            <property name="text">
             <string>Русский</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Автоматически</string>
            </property>
           </item>
          </widget>
@@ -345,7 +345,7 @@
            <string comment="Адрес роутера"/>
           </property>
           <property name="inputMask">
-           <string>000.000.000.000; </string>
+           <string>000.000.000.000</string>
           </property>
           <property name="text">
            <string>192.168.0.1</string>
@@ -399,7 +399,7 @@
            </sizepolicy>
           </property>
           <property name="inputMask">
-           <string>000.000.000.000; </string>
+           <string>000.000.000.000</string>
           </property>
           <property name="text">
            <string>255.255.255.0</string>
@@ -1076,7 +1076,7 @@
            <string comment="Адрес роутера"/>
           </property>
           <property name="inputMask">
-           <string>000.000.000.000; </string>
+           <string>000.000.000.000</string>
           </property>
           <property name="text">
            <string>192.168.0.2</string>
@@ -1101,7 +1101,7 @@
            <string comment="Адрес роутера"/>
           </property>
           <property name="inputMask">
-           <string>000.000.000.000; </string>
+           <string>000.000.000.000</string>
           </property>
           <property name="text">
            <string>192.168.0.255</string>
@@ -1305,7 +1305,7 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>10</x>

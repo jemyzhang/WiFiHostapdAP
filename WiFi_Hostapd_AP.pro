@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT += widgets
 
 TARGET = WiFi_Hostapd_AP
 TEMPLATE = app
