@@ -24,13 +24,17 @@ WiFi分享器，可用于Ubuntu或其他Linux发行版。源程序来源：[clic
 
 4. 保证你的无线网卡是开启的：
 > $ ifconfig wlan0 up#如果出现了rfkill的报错
+
 > $ rfkill list                        #查看你的无线设备
+
 > $ rfkill unblock 2                #将你对应的无线设备解锁如果你只有一个无线设备的话，可以直接下面这样
+
 > $ rfkill unblock all                #将所有无线设备都解锁
 
 5. sudohostapd -d 可以显示错误信息
 在命令行下运行程序，也能看到错误信息 
 > $ sudo ./WiFi_Hostapd_AP
+
 > $ hostapd /etc/hostapd/hostapd.conf #可以排除配置信息是否有出错
 
 6. 如果是说WEP的key配置文件中出错
