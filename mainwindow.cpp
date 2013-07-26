@@ -223,8 +223,8 @@ void MainWindow::TrafficUpdate() {
                 GlobalTrafficOutOld = GlobalTrafficOut;
 
                 // Устанавливаем новый траффик
-                GlobalTrafficIn = Elements.at(1).toLongLong();
-                GlobalTrafficOut = Elements.at(9).toLongLong();
+                GlobalTrafficIn = Elements.at(9).toLongLong();
+                GlobalTrafficOut = Elements.at(1).toLongLong();
             }
         }
 
