@@ -12,6 +12,6 @@
         <file>pic/icons/network-connect.png</file>
         <file>pic/icons/system-run.png</file>
         <file>pic/icons/system-shutdown.png</file>
-        <file>WiFi Hostapd AP.desktop</file>
+        <file>WiFiHostapdAP.desktop</file>
     </qresource>
 </RCC>

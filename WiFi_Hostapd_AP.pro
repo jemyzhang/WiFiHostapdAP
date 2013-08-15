@@ -53,3 +53,18 @@ app_en.ts
 RC_FILE = myapp.rc
 
 RESOURCES     = images.qrc
+
+#target
+target.files += WiFi_Hostapd_AP
+target.path = /usr/bin/
+
+#icons
+icons.files += pic/WiFi_logo.png
+icons.path = /usr/share/pixmaps/WiFiHostapdAP/
+
+#desktop
+desktop.files += WiFiHostapdAP.desktop
+desktop.path = /usr/share/applications/
+
+INSTALLS += target icons desktop
+
