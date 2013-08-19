@@ -3,7 +3,7 @@
 Type=Application
 Name=WiFi Hostapd AP
 Comment=Wifi hostapd AP
-Exec=/usr/bin/WiFi_Hostapd_AP
+Exec=/usr/bin/wifihostapdap
 Icon=/usr/share/pixmaps/WiFiHostapdAP/WiFi_logo.png
 Categories=Utility;
 Terminal=false

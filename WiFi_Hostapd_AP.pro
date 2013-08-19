@@ -54,9 +54,18 @@ RC_FILE = myapp.rc
 
 RESOURCES     = images.qrc
 
+#bin
+bin.files += wifihostapdap
+bin.path = /usr/bin/
+
 #target
 target.files += WiFi_Hostapd_AP
-target.path = /usr/bin/
+target.path = /usr/lib/WiFiHostapdAP/
+
+#lang
+lang.files += app_ru.qm
+lang.files += app_en.qm
+lang.path = /usr/lib/WiFiHostapdAP/
 
 #icons
 icons.files += pic/WiFi_logo.png
@@ -66,5 +75,5 @@ icons.path = /usr/share/pixmaps/WiFiHostapdAP/
 desktop.files += WiFiHostapdAP.desktop
 desktop.path = /usr/share/applications/
 
-INSTALLS += target icons desktop
+INSTALLS += bin target lang icons desktop
 
